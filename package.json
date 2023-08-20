@@ -1,0 +1,19 @@
+{
+	"name": "parcel-resolver-monorepo-packages",
+	"version": "1.0.0",
+	"type": "commonjs",
+	"exports": {
+		".": {
+			"types": "./src/index.d.ts",
+			"default": "./src/index.js"
+		}
+	},
+	"engines": {
+		"parcel": "2.9.3"
+	},
+	"dependencies": {
+		"@parcel/plugin": "2.9.3",
+		"lion-utils": "0.2.2",
+		"resolve.exports": "2.0.2"
+	}
+}
