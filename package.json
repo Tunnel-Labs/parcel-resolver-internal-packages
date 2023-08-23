@@ -12,8 +12,8 @@
 		"parcel": "2.9.3"
 	},
 	"dependencies": {
-		"@tunnel/get-monorepo": "1.0.0",
-		"@parcel/plugin": "2.9.3",
-		"resolve.exports": "2.0.2"
+		"@tunnel/get-monorepo": "^1.0.0",
+		"@parcel/plugin": "^2.9.3",
+		"resolve.exports": "^2.0.2"
 	}
 }
