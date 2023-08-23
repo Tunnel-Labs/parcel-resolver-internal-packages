@@ -5,9 +5,12 @@ const path = require('path');
 const { Resolver } = require('@parcel/plugin');
 const resolve = require('resolve.exports');
 // @ts-expect-error: works
-const { getProjectDirpath } = require('lion-utils');
+const { getMonorepoDirpath } = require('@tunnel/get-monorepo');
 
-const monorepoDirpath = getProjectDirpath(__dirname, { monorepoRoot: true });
+const monorepoDirpath = getMonorepoDirpath(__dirname);
+if (monorepoDirpath === undefined) {
+	throw new Error('Could not retrieve monorepo directory');
+}
 
 const packageCategories = {
 	monorepo: ['monorepo'],
