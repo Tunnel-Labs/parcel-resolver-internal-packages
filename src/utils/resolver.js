@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/prefer-node-protocol -- Parcel doesn't support node protocol imports */
 
 const fs = require('fs');
-const path = require('path');
+const path = require('pathe');
 const { Resolver } = require('@parcel/plugin');
 const resolve = require('resolve.exports');
 // @ts-expect-error: works
